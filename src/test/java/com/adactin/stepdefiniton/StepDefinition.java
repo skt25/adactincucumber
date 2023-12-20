@@ -26,6 +26,7 @@ public class StepDefinition extends base_Class {
 	@When("^user Enter The \"([^\"]*)\" In Username Field$")
 	public void user_Enter_The_In_Username_Field(String username) throws Throwable {
 	sendValue(pom.getHp().getUserid(), username);
+	System.out.println(username);
 
 	}
 
