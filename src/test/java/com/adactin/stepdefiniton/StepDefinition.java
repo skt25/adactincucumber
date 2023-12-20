@@ -33,6 +33,7 @@ public class StepDefinition extends base_Class {
 	@When("^user Enter The \"([^\"]*)\" In Password Field$")
 	public void user_Enter_The_In_Password_Field(String password) throws Throwable {
 	sendValue(pom.getHp().getPassword(), password);
+	System.out.println(password);
 	}
 
 //	@When("^user Enter The Username In Username Field$")
